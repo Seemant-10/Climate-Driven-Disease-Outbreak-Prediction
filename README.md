@@ -17,6 +17,16 @@ The datasets used in this project were collected from reliable, open sources:
 
 💧 Humidity & Precipitation: World Bank Climate Change Knowledge Portal (CCKP)
 
+📑 Dataset Description
+| Variable             | Description                                                                 | Unit / Scale              |
+| -------------------- | --------------------------------------------------------------------------- | ------------------------- |
+| **Year**             | Calendar year (common across all datasets)                                  | YYYY                      |
+| **DengueCases**      | Reported dengue cases in India                                              | Count (number of cases)   |
+| **MalariaIncidence** | Estimated incidence of malaria per 1,000 population at risk                 | Cases per 1,000 people    |
+| **TempAnomaly**      | Annual average surface temperature anomaly (relative to 1951–1980 baseline) | °C (Celsius)              |
+| **Humidity**         | Average annual relative humidity                                            | % (percentage)            |
+| **Precipitation**    | Average annual precipitation                                                | mm (millimeters per year) |
+
 📂 Repository Structure
 Climate-Driven-Disease-Outbreak-Prediction/
 │── data/
