@@ -1,0 +1,38 @@
+🌍 Climate-Driven Disease Outbreak Prediction
+
+This project explores the relationship between climate variables (temperature, humidity, precipitation) and vector-borne diseases (dengue and malaria) in India. The goal is to understand whether climate change impacts disease outbreaks and to build a foundation for predictive modeling.
+
+📌 Project Overview
+ Develop an ML model that uses climate features to predict the risk of disease outbreaks.
+
+📊 Data Sources
+
+The datasets used in this project were collected from reliable, open sources:
+
+🦟 Dengue cases: OpenDengue
+
+🦟 Malaria incidence: WHO Global Health Observatory (GHO)
+
+🌡 Temperature anomalies: Berkeley Earth Surface Temperature Data
+
+💧 Humidity & Precipitation: World Bank Climate Change Knowledge Portal (CCKP)
+
+📂 Repository Structure
+Climate-Driven-Disease-Outbreak-Prediction/
+│── data/
+│   ├── raw/               # Original raw files (downloaded datasets)
+│   │   ├── Dengue_india.csv
+│   │   ├── malaria_indicators_ind.csv
+│   │   ├── india-TAVG-Trend.txt
+│   │   ├── humidity_ind.xlsx
+│   │   ├── precipitation_ind.xlsx
+│   ├── processed/
+│       └── India_Climate_Disease_Merged.csv   # Final cleaned dataset
+│
+│── scripts/
+│   └── merge.py           # Data cleaning + merging script
+│
+│── source code files/
+│   └── Week1_Project.ipynb # Jupyter Notebook for Week 1 submission
+│
+│── README.md              # Project documentation
