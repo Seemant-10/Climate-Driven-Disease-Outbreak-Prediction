@@ -1,50 +1,41 @@
 🌍 Climate-Driven Disease Outbreak Prediction
 
-This project explores the relationship between climate variables (temperature, humidity, precipitation) and vector-borne diseases (dengue and malaria) in India. The goal is to understand whether climate change impacts disease outbreaks and to build a foundation for predictive modeling.
+This project explores the relationship between climate variables ( like temperature, humidity, precipitation) and vector-borne diseases (dengue and malaria) across multiple countries (120+) with monthly resolution. The goal is to explore global climate–disease patterns, identify climate risk factors for outbreaks, and build predictive ML models.
 
 📌 Project Overview
 
  Develop an ML model that uses climate features to predict the risk of disease outbreaks.
 
-📊 Data Sources
+📊 Data Source: 
 
-The datasets used in this project were collected from reliable, open sources:
-
-🦟 Dengue cases: OpenDengue (https://opendengue.org/)
-
-🦟 Malaria incidence: WHO Global Health Observatory (GHO) (https://www.who.int/data/gho)  
-
-🌡 Temperature anomalies: Berkeley Earth Surface Temperature Data (http://berkeleyearth.org/data/)  
-
-💧 Humidity & Precipitation: World Bank Climate Change Knowledge Portal (CCKP) (https://climateknowledgeportal.worldbank.org/)  
+Kaggle – Climate and Disease Dataset (https://www.kaggle.com/datasets/hopeofchange/climate-driven-disease-spread)
+ (covers 120 countries, 2000–2023, monthly data).
+Includes climate variables (temperature, precipitation, humidity, AQI, UV index) and disease cases (dengue, malaria).
 
 📑 Dataset Description
-| Variable             | Description                                                                 | Unit / Scale              |
-| -------------------- | --------------------------------------------------------------------------- | ------------------------- |
-| **Year**             | Calendar year (common across all datasets)                                  | YYYY                      |
-| **DengueCases**      | Reported dengue cases in India                                              | Count (number of cases)   |
-| **MalariaIncidence** | Estimated incidence of malaria per 1,000 population at risk                 | Cases per 1,000 people    |
-| **TempAnomaly**      | Annual average surface temperature anomaly (relative to 1951–1980 baseline) | °C (Celsius)              |
-| **Humidity**         | Average annual relative humidity                                            | % (percentage)            |
-| **Precipitation**    | Average annual precipitation                                                | mm (millimeters per year) |
+| Variable                | Description                                    | Unit / Scale |
+| ----------------------- | ---------------------------------------------- | ------------ |
+| **year**                | Year of observation                            | YYYY         |
+| **month**               | Month of observation                           | 1–12         |
+| **country**             | Country name (120+ countries)                  | Categorical  |
+| **region**              | Regional classification (continent/sub-region) | Categorical  |
+| **avg\_temp\_c**        | Average temperature                            | °C           |
+| **precipitation\_mm**   | Monthly precipitation                          | mm           |
+| **air\_quality\_index** | Air Quality Index                              | AQI units    |
+| **uv\_index**           | UV radiation index                             | Index        |
+| **malaria\_cases**      | Reported malaria cases                         | Count        |
+| **dengue\_cases**       | Reported dengue cases                          | Count        |
+| **population\_density** | Population per km²                             | people/km²   |
+| **healthcare\_budget**  | Healthcare budget per capita (approx.)         | USD          |
+
 
 📂 Repository Structure
 Climate-Driven-Disease-Outbreak-Prediction/                                                                                                                         
 │── Data/                                                                                                                                                           
-│   ├── raw/               # Original raw files (downloaded datasets)                                                                                               
-│   │   ├── Dengue_india.csv                                                                                                                                        
-│   │   ├── malaria_indicators_ind.csv                                                                                                                              
-│   │   ├── india-TAVG-Trend.txt                                                                                                                                    
-│   │   ├── humidity_ind.xlsx                                                                                                                                       
-│   │   ├── precipitation_ind.xlsx                                                                                                                                  
-│   ├── processed/                                                                                                                                                  
-│       └── India_Climate_Disease_Merged.csv   # Final cleaned dataset                                                                                              
-│                                                                                                                                                                   
-│── Scripts/                                                                                                                                                        
-│   └── merge.py           # Data cleaning + merging script                                                                                                         
+│   ├── climate_disease_dataset                                                                                                                                                                                      
 │                                                                                                                                                                   
 │── sourceCodeFiles/                                                                                                                                              
-│   └── main.ipynb # Jupyter Notebook for Week 1 submission                                                                                                
+│   └── main.ipynb                                                                                                
 │                                                                                                                                                                   
 │── README.md              # Project documentation                                                                                                                  
                                                                                                                                                                     
