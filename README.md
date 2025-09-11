@@ -36,9 +36,9 @@ Climate-Driven-Disease-Outbreak-Prediction/
 │                                                                                                                                                                   
 │── sourceCodeFiles/                                                                                                                                              
 │   └── main.ipynb   
-|   └── app.py
-|   └── random_forest_model.pkl
-|   └── scaler.pkl
+│   └── app.py                                                                                                                                                                                                       
+│   └── random_forest_model.pkl                                                                                                                                                                                      
+│   └── scaler.pkl                                                                                                                                                                                                   
 │                                                                                                                                                                   
 │── README.md              # Project documentation                                                                                                                  
                                                                                                                                                                     
