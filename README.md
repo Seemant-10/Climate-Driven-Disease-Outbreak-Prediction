@@ -32,10 +32,13 @@ Includes climate variables (temperature, precipitation, humidity, AQI, UV index)
 📂 Repository Structure
 Climate-Driven-Disease-Outbreak-Prediction/                                                                                                                         
 │── Data/                                                                                                                                                           
-│   ├── climate_disease_dataset                                                                                                                                                                                      
+│   └── climate_disease_dataset                                                                                                                                                                                      
 │                                                                                                                                                                   
 │── sourceCodeFiles/                                                                                                                                              
-│   └── main.ipynb                                                                                                
+│   └── main.ipynb   
+|   └── app.py
+|   └── random_forest_model.pkl
+|   └── scaler.pkl
 │                                                                                                                                                                   
 │── README.md              # Project documentation                                                                                                                  
                                                                                                                                                                     
